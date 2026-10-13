@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    width: 400px;
+    margin: 0 auto;
+    background: #ffffff;
+    color: #1a1a1a;
+  }
+
+  /* Header */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #2563eb;
+  }
+  .menu-icon {
+    font-size: 22px;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 0 20px 20px 20px;
+  }
+  .tag {
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .hero h1 {
+    font-size: 32px;
+    margin: 10px 0;
+  }
+  .highlight {
+    color: #2563eb;
+  }
+  .hero p {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .hero-buttons {
+    margin: 20px 0;
+  }
+  .btn-primary {
+    background: #2563eb;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  .btn-secondary {
+    background: #fff;
+    color: #2563eb;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #2563eb;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .profile-img {
+    width: 100%;
+    border-radius: 16px;
+    margin-top: 20px;
+  }
+
+  .doodle {
+    text-align: right;
+    font-size: 12px;
+    font-style: italic;
+    color: #999;
+    padding: 0 20px;
+  }
+
+  /* Stats Section */
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+  }
+  .stat-item h2 {
+    color: #2563eb;
+    font-size: 20px;
+    margin: 0;
+  }
+  .stat-item p {
+    font-size: 12px;
+    color: #666;
+    margin: 4px 0 0 0;
+  }
+
+  /* Skills Section */
+  .section {
+    padding: 20px;
+  }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-header h2 {
+    font-size: 18px;
+  }
+  .view-all {
+    color: #2563eb;
+    font-size: 12px;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+  }
+  .skill-card {
+    background: #f5f7fb;
+    border-radius: 10px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    width: 100px;
+  }
+
+  /* Featured Project */
+  .project-card {
+    background: #f5f7fb;
+    border-radius: 14px;
+    padding: 15px;
+    margin-top: 15px;
+  }
+  .project-img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .project-card h3 {
+    font-size: 16px;
+    margin: 10px 0 5px 0;
+  }
+  .project-card p {
+    font-size: 13px;
+    color: #666;
+  }
+  .tech-tags {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .tech-tags span {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+  }
+
+  /* Contact Section */
+  .contact-box {
+    background: #2563eb;
+    color: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contact-box h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+  }
+  .contact-box p {
+    margin: 0;
+    font-size: 12px;
+  }
+  .contact-btn {
+    background: #fff;
+    color: #2563eb;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #eee;
+  }
+  footer .logo {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  footer p {
+    font-size: 11px;
+    color: #999;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Aarav Sharma</div>
+    <div class="menu-icon">☰</div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="tag">FULL STACK DEVELOPER</div>
+    <h1>Hi, I'm<br><span class="highlight">Aarav Sharma</span></h1>
+    <p>I build modern web applications with MERN Stack.<br>
+    Passionate about creating scalable, maintainable, user-friendly apps.</p>
+
+    <div class="hero-buttons">
+      <button class="btn-primary">View My Work →</button>
+      <button class="btn-secondary">Download Resume ⬇</button>
+    </div>
+
+    <div class="social-icons">
+      <span>🔗</span>
+      <span>🐙</span>
+      <span>🐦</span>
+      <span>✉️</span>
+    </div>
+
+    <img class="profile-img" src="profile.jpg" alt="profile photo">
+    <div class="doodle">Code · Build · Learn · Repeat</div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat-item">
+      <h2>3+</h2>
+      <p>Years Experience</p>
+    </div>
+    <div class="stat-item">
+      <h2>50+</h2>
+      <p>Projects Completed</p>
+    </div>
+    <div class="stat-item">
+      <h2>100+</h2>
+      <p>Happy Clients</p>
+    </div>
+    <div class="stat-item">
+      <h2>1000+</h2>
+      <p>Hours of Learning</p>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="section">
+    <div class="section-header">
+      <h2>My Skills</h2>
+      <span class="view-all">View All →</span>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">⚛️ React</div>
+      <div class="skill-card">🟢 Node.js</div>
+      <div class="skill-card">🚂 Express.js</div>
+      <div class="skill-card">🍃 MongoDB</div>
+      <div class="skill-card">🌊 Tailwind</div>
+      <div class="skill-card">🟨 JavaScript</div>
+      <div class="skill-card">🔶 HTML5</div>
+      <div class="skill-card">🔵 CSS3</div>
+    </div>
+  </div>
+
+  <!-- Featured Projects -->
+  <div class="section">
+    <div class="section-header">
+      <h2>Featured Projects</h2>
+      <span class="view-all">View All →</span>
+    </div>
+
+    <div class="project-card">
+      <img class="project-img" src="project.jpg" alt="project image">
+      <h3>ShopEase</h3>
+      <p>A full-featured e-commerce platform with cart, auth and payment integration.</p>
+      <div class="tech-tags">
+        <span>React</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact-box">
+    <div>
+      <h3>Have a project in mind?</h3>
+      <p>Let's discuss and create something together.</p>
+    </div>
+    <button class="contact-btn">Get In Touch →</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="logo">Aarav Sharma</div>
+    <div class="footer-icons">
+      <span>🔗</span>
+      <span>🐙</span>
+      <span>🐦</span>
+      <span>✉️</span>
+    </div>
+    <p>© 2024 Aarav Sharma. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

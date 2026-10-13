@@ -1,0 +1,107 @@
+{
+    "users": [
+        {
+            "username": "admin",
+            "password_hash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+            "role": "admin"
+        }
+    ],
+    "students": [
+        {
+            "student_id": "STU-100001",
+            "name": "Aarav Patel",
+            "age": 18,
+            "gender": "Male",
+            "email": "aarav@example.com",
+            "phone": "9876543210",
+            "course": "B.Tech CSE AI/ML",
+            "semester": 1,
+            "city": "Ahmedabad",
+            "admission_year": 2026,
+            "subjects": [
+                {
+                    "name": "Python",
+                    "marks": 91,
+                    "max_marks": 100,
+                    "grade": "F"
+                },
+                {
+                    "name": "Mathematics",
+                    "marks": 84,
+                    "max_marks": 100,
+                    "grade": "F"
+                },
+                {
+                    "name": "Web Development",
+                    "marks": 88,
+                    "max_marks": 100,
+                    "grade": "F"
+                },
+                {
+                    "name": "Physics",
+                    "marks": 76,
+                    "max_marks": 100,
+                    "grade": "F"
+                },
+                {
+                    "name": "English",
+                    "marks": 90,
+                    "max_marks": 100,
+                    "grade": "F"
+                }
+            ],
+            "attendance": {
+                "total_classes": 60,
+                "attended_classes": 55
+            }
+        },
+        {
+            "student_id": "STU-100002",
+            "name": "Diya Shah",
+            "age": 18,
+            "gender": "Female",
+            "email": "diya@example.com",
+            "phone": "9876501234",
+            "course": "B.Tech CSE AI/ML",
+            "semester": 1,
+            "city": "Gandhinagar",
+            "admission_year": 2026,
+            "subjects": [
+                {
+                    "name": "Python",
+                    "marks": 95,
+                    "max_marks": 100,
+                    "grade": "F"
+                },
+                {
+                    "name": "Mathematics",
+                    "marks": 92,
+                    "max_marks": 100,
+                    "grade": "F"
+                },
+                {
+                    "name": "Web Development",
+                    "marks": 89,
+                    "max_marks": 100,
+                    "grade": "F"
+                },
+                {
+                    "name": "Physics",
+                    "marks": 85,
+                    "max_marks": 100,
+                    "grade": "F"
+                },
+                {
+                    "name": "English",
+                    "marks": 94,
+                    "max_marks": 100,
+                    "grade": "F"
+                }
+            ],
+            "attendance": {
+                "total_classes": 60,
+                "attended_classes": 59
+            }
+        }
+    ]
+}

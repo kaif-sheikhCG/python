@@ -1,0 +1,7 @@
+a,b,c=map(float,input("Enter three integers : ").split()[0:3])
+print(a,b,c, type(a),type(b),type(c))
+print(f"Sum of {a}, {b} and {c} is : {a+b+c:.2f}")
+print(f"Average of {a}, {b} and {c} is : {(a+b+c)/3:.2f}")
+print(a,b,c,sep="|",end="\n")
+date,month,year=map(int,input("Enter a date in dd/mm/yyyy format :").split("/")[0:3])
+print(f"date is {date}, month is {month}, year is {year}")
